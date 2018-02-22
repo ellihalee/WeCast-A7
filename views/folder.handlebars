@@ -42,7 +42,7 @@
 
   <div class="container">
     <div class="page-title">
-      <h4>COGS 120</h4>
+      <h4>{{folderName}}</h4>
     </div>
     <div class="row">
       <div class="col-xs-6 form-group">
@@ -91,7 +91,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form id="addNoteForm" role="form" method"get" action="/addNote"> 
+          <form id="addNoteForm" role="form" method"get" action="/addNote/{{folderID}}"> 
             <div class="form-group">
               <input type="text" class="form-control" id="name" placeholder="Name" name="name">
             </div>

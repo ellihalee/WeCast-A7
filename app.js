@@ -50,14 +50,18 @@ if ('development' == app.get('env')) {
 app.get('/', login.view); //login page
 app.get('/index', index.view);
 app.get('/note', note.view);
-app.get('/folder', folder.view);
+app.get('/folder/:folderID', folder.view);
 app.get('/profile', profile.view);
 app.get('/help', help.view);
 app.get('/logout', logout.view);
+
+//Placeholder
 app.get('/add_function', add_function.view);
 app.get('/note_function', note_function.view);
+// End Placeholder
+
 app.get('/addFolder', addFolder.addFolder);
-app.get('/addNote', addNote.addNote);
+app.get('/addNote/:folderID', addNote.addNote);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
