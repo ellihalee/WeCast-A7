@@ -49,7 +49,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', login.view); //login page
 app.get('/index', index.view);
-app.get('/note', note.view);
+app.get('/note/:folderID', note.view);
 app.get('/folder/:folderID', folder.view);
 app.get('/profile', profile.view);
 app.get('/help', help.view);

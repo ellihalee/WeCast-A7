@@ -34,7 +34,7 @@
             <li><a href="/help">Help</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/logout">Logout</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -59,16 +59,16 @@
     </div>
 
       <!-- start implementing handlebars for notes -->
-  <div class="row">
     {{#each notes}}
-    <div class="col-xs-5">
-      <a href = "/note"> <button type="button" class="btn btn-info btn-block">{{name}}</button></a>
+    <div class="row"> 
+    <div class="col-xs-6">
+      <a href = "/note/{{../folderID}}"> <button type="button" class="btn btn-info btn-block">{{name}}</button></a>
     </div>
-    <div class="col-xs-5">{{date}}  {{time}}</div>
-    <div class="col-xs-2"></div>
+    <div class="col-xs-6">{{date}}  {{time}}</div>
     <hr>
-    {{/each}}
+
   </div>
+      {{/each}}
   </div>
 
   <div class = "back">

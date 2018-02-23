@@ -5,7 +5,7 @@
 
 exports.view = function(req, res){
   res.render('note', {
-  
+    folderID: req.params.folderID, 
   
   });
 };
