@@ -45,68 +45,72 @@
       <h4>Note Title</h4>
     </div>
     <!-- Everything Here -->
-    <div class="row"> <!-- recording bar --> 
-      <div id = "recording_status">
-        <img src = "/pics/recording_bar.png" width = "270" height = "170">
-      </div>
-    </div>
-
-    <div class="row"> <!-- recording time --> 
-      <div class = "col-xs-2"></div>
-      <div class = "col-xs-8" id = "recording_time">
-        <h2>4:20</h2>
-      </div>
-      <div class = "col-xs-2"></div>
-      
-    </div> 
-    <div class="row"> <!-- reminder -->
-      <div class = "col-xs-2"></div>
-      <div class = "col-xs-8" id = "reminder_title">
-        <img src = "/pics/reminder.png" width = "275" height = "34">
-      </div>
-      <div class = "col-xs-2"></div>
-      
-    </div>
-
-     <div class="row"> <!-- bookmark and camera button -->
-      <div class = "col-xs-3"></div>
-      <div class = "col-xs-3" id ="round_bookmark">
-        <a href = "#bookmark" class="modal-toggle" data-toggle="modal" data-target="#bookmark">
-          <img src = "/pics/round_bookmark.png" width = "70" height = "70">
-        </a>
-      </div>
-      <div class = "col-xs-3" id = "round_camera">
-        <a href="#camera" class="modal-toggle" data-toggle="modal" data-target="#camera">
-          <img src = "/pics/round_camera.png" width = "70" height = "70">
-        </a>
-      </div>
-      <div class = "col-xs-3"></div>
-      
-     </div>
-
-     <div class = "row" id = "the_5th_row"> <!-- recording, audio, done button -->
-      <div class = "col-xs-4" id = "mic_btn">
-        <div class = "col-xs-2"></div>
-        <div class = "col-xs-2">
-          <a href = "/note_function"><img src = "/pics/round_audio.png" width = "70" height = "70"></a>
+    <div class = "all_btn">
+      <div class="row"> <!-- recording bar --> 
+        <div id = "recording_status">
+          <img src = "/pics/recording_bar.png" width = "270" height = "170">
         </div>
       </div>
-      <div class = "col-xs-4" id = "recording_btn">
-          <a href = "/note_function"><img src = "/pics/red_record.png" width = "80" height = "80"></a>
 
-      </div>
-      <div class = "col-xs-4" id = "done_btn">
-        <div class = "col-xs-2">
-          <a href = "/note_function"><img src = "/pics/done_btn.png" width = "65" height = "55"></a>
+      <div class="row"> <!-- recording time --> 
+        <div class = "col-xs-2"></div>
+        <div class = "col-xs-8" id = "recording_time">
+          <h2>4:20</h2>
         </div>
         <div class = "col-xs-2"></div>
+        
+      </div> 
+      <div class="row"> <!-- reminder -->
+        <div class = "col-xs-2"></div>
+        <div class = "col-xs-8" id = "reminder_title">
+          <img src = "/pics/reminder.png" width = "275" height = "34">
+        </div>
+        <div class = "col-xs-2"></div>
+        
       </div>
-     </div>
+
+      <div class = "fifth_row">
+       <div class="row"> <!-- bookmark and camera button -->
+        <div class = "col-xs-3"></div>
+        <div class = "col-xs-3" id ="round_bookmark">
+          <a href = "#bookmark" class="modal-toggle" data-toggle="modal" data-target="#bookmark">
+            <img src = "/pics/round_bookmark.png" width = "70" height = "70">
+          </a>
+        </div>
+        <div class = "col-xs-3" id = "round_camera">
+          <a href="#camera" class="modal-toggle" data-toggle="modal" data-target="#camera">
+            <img src = "/pics/round_camera.png" width = "70" height = "70">
+          </a>
+        </div>
+        <div class = "col-xs-3"></div>
+      </div>
+        
+       </div>
+
+       <div class = "row" id = "the_5th_row"> <!-- recording, audio, done button -->
+        <div class = "col-xs-4" id = "mic_btn">
+          <div class = "col-xs-2"></div>
+          <div class = "col-xs-2">
+            <a href = "/note_function"><img src = "/pics/round_audio.png" width = "70" height = "70"></a>
+          </div>
+        </div>
+        <div class = "col-xs-4" id = "recording_btn">
+            <a href = "/note_function"><img src = "/pics/red_record.png" width = "80" height = "80"></a>
+
+        </div>
+        <div class = "col-xs-4" id = "done_btn">
+          <div class = "col-xs-2">
+            <a href = "/note_function"><img src = "/pics/done_btn.png" width = "65" height = "55"></a>
+          </div>
+          <div class = "col-xs-2"></div>
+        </div>
+       </div>
+   </div>
 
   </div>
   <!-- back button -->
   <div class = "back">
-    <a href = "/folder"><img src = "/pics/arrow.png" width="55" height = "55"></a>
+    <a href = "/folder/{{folderID}}"><img src = "/pics/arrow.png" width="55" height = "55"></a>
   </div>
   <!-- end of back button --> 
 
@@ -147,7 +151,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Added at 4:20</p>
+          <p>Added at 5:20</p>
           <input type="text" class="form-control" id="filter" value="Add a note">
           <div class="modal-footer">
             <button id="savePhoto" type="button" data-dismiss="modal" class="btn btn-primary">Save Bookmark</button>

@@ -65,17 +65,33 @@ body {
 	padding-bottom: 10%;
 }
 
-#enter_btn {
-	margin: auto;
-	padding-top: 10%;
+.button {
+	font-family: Times;
+	margin: auto 0 0 0; 
+	border: 1px solid #23221d;
+} 
+
+/* Facebook login button */
+.facebooklogin {
+	padding-top: 5%;
+	margin:auto;
 }
+
+.fb_btn {
+	padding-top: 10%;
+	padding-left: 30%;
+}
+
 /* end of login page css */
 
-
+.all_btn {
+	align:center;
+}
 .col-xs-4 span {
 	margin-left: 20px;
 }
 #recording_status {
+
 	margin-left: 72px;
 /*	width: 50%; */
 }
@@ -92,6 +108,9 @@ body {
 
 }
 
+.fifth_row {
+	width: 100%;
+}
 #round_bookmark, #round_camera {
 	padding-top: 10px;
 	margin-left:10px;
