@@ -61,7 +61,20 @@ $("#savePhoto").click(function() {
   $("#retake").hide();
 });
 
+$("#recordButton").click(function() {
+  //Change buttons
+  $("#recordButton2").show();
+  $("#recordButton").hide();
+});
+
+$("#recordButton2").click(function() {
+  //Change buttons
+  $("#recordButton2").hide();
+  $("#recordButton").show();
+});
+
 //Sample Function
 function initializePage(){
 	console.log("Javascript connected!");  
+  $("#recordButton2").hide();
 }
