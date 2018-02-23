@@ -34,7 +34,7 @@
             <li><a href="/help">Help</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/logout">Logout</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -44,29 +44,21 @@
     <div class="page-title">
       <h4>Note Title</h4>
     </div>
+
     <!-- Everything Here -->
     <div class = "all_btn">
       <div class="row"> <!-- recording bar --> 
-        <div id = "recording_status">
-          <img src = "/pics/recording_bar.png" width = "270" height = "170">
-        </div>
-      </div>
-
-      <div class="row"> <!-- recording time --> 
-        <div class = "col-xs-2"></div>
-        <div class = "col-xs-8" id = "recording_time">
-          <h2>4:20</h2>
-        </div>
-        <div class = "col-xs-2"></div>
-        
-      </div> 
-      <div class="row"> <!-- reminder -->
-        <div class = "col-xs-2"></div>
-        <div class = "col-xs-8" id = "reminder_title">
-          <img src = "/pics/reminder.png" width = "275" height = "34">
-        </div>
-        <div class = "col-xs-2"></div>
-        
+        <table id = "wrapper" cellspacing="10">
+          <tr>
+          <td><img src = "/pics/recording_bar.png" width = "270" height = "170"></td>
+        </tr>
+        <tr>
+          <td><h2>5:20</h2></td> <!--recording time--> 
+        </tr>
+        <tr>
+          <td> <img src = "/pics/reminder.png" width = "275" height = "34"></td>
+        </tr>
+        </table>
       </div>
 
       <div class = "fifth_row">
@@ -105,7 +97,8 @@
           <div class = "col-xs-2"></div>
         </div>
        </div>
-   </div>
+   </div> <!-- end of current button --> 
+
 
   </div>
   <!-- back button -->
