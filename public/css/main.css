@@ -26,10 +26,10 @@ body {
 .add {
 	right: 5%;
 	bottom: 5%;
-	position: absolute;
+	position: fixed;
 }
 .back {
-	position:absolute;
+	position:fixed;
 	bottom:4%;
 	left: 5%;
 }
